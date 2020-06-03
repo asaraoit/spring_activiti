@@ -3,7 +3,7 @@ package com.asarao;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(exclude = {org.activiti.spring.boot.SecurityAutoConfiguration.class})
+@SpringBootApplication
 public class ActivitiApplication {
 
     public static void main(String[] args) {
