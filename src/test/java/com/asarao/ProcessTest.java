@@ -51,7 +51,7 @@ public class ProcessTest {
     @Test
     public void startProcess(){
         RuntimeService runtimeService = processEngine.getRuntimeService();
-        String processDefinitionId = "leave:1:98b000d7-a605-11ea-931e-181deaf1ddd1";
+        String processDefinitionId = "leave:1:4a026812-a669-11ea-b8f5-485d6001e193";
         ProcessInstance processInstance = runtimeService.startProcessInstanceById(processDefinitionId);
 
         System.out.println("流程实例ID:"+ processInstance.getId());
