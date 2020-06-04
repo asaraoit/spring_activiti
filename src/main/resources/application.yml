@@ -12,12 +12,24 @@ spring:
       validation-query: SELECT 1 FROM DUAL
   # activiti default configuration
   activiti:
-    database-schema-update: false
+    database-schema-update: true
     check-process-definitions: false
     async-executor-activate: true
     process-definition-location-prefix: classpath:/processes/
     history-level: full
     db-history-used: true
+  security:
+    user:
+      name: user
+      password: 123
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
 
 # mybatis-plus 配置
 mybatis-plus:

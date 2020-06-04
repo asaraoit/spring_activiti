@@ -45,9 +45,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!--模板引擎 freemarker-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-freemarker</artifactId>-->
+        <!--</dependency>-->
+        <!-- Thymeleaf依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -107,6 +112,11 @@
                     <artifactId>mybatis</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <!-- Activiti生成流程图 -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-image-generator</artifactId>
         </dependency>
     </dependencies>
 
